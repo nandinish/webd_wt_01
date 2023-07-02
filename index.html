@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            color: aliceblue;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: aliceblue;
+            padding: 10px;
+
+        }
+        .logo-holder{
+            display: flex;
+            align-items: center;
+
+        }
+        .logo-holder img{
+            height: 50px;
+            margin: 0 10px;
+        }
+        .navbar ul li{
+            list-style: none;
+            margin: 0 10px;
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .navbar ul{
+            display: flex;
+            align-items: center;
+        }
+        .book-trial{
+            display: flex;
+            align-items: center;
+        }
+        .book-trial a{
+            border: 2px solid aliceblue;
+            border-radius: 10px;
+            padding: 5px;
+            transition: all 0.2s;
+        }
+        .book-trial a:hover{
+            background-color: rgba(224, 215, 250, 0.507);
+        }
+        .galinfo{
+            display: flex;
+            align-items: center;
+            background-color: purple;
+            padding: 20px;
+            color: aliceblue;
+            margin: 10px 0;
+            justify-content: center;
+        }
+        .img-cont {
+            margin: 20px ;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            align-items: center;
+            justify-items: stretch;
+            justify-content: center;
+
+        }
+        .img-cont img{
+            transition: all 0.2s;
+        }
+        .img-cont img:hover{
+            box-shadow: 2px 2px 5px black;
+        }
+        .footer{
+            background-color: black;
+            padding: 20px;
+
+        }
+        .footer h1{
+            margin-bottom: 10px;
+        }
+        .footer01{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .footer02{
+            margin: 10px 0;
+        }
+        .footer02 img{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-holder">
+                <img src="images/codepen.png" alt="">
+                <h1>IMAGE</h1>
+            </div>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+            <div class="book-trial">
+                <a href="">Book Trial</a>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="galinfo">
+            <p>this is kind of an image gallery</p>
+        </div>
+        <div class="img-cont">
+            <img src="images/image1.jfif" alt="">
+            <img src="images/image2.jfif" alt="">
+            <img src="images/image3.jfif" alt="">
+            <img src="images/image4.jfif" alt="">
+            <img src="images/image5.jfif" alt="">
+            <img src="images/image6.jfif" alt="">
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer01">
+            <div class="photogra">
+                <h1>PHOTOGRAPHY</h1>
+                <P>this is some random dummy text</P>
+            </div>
+            <div class="contact">
+                <h1>CONTACT Info</h1>
+                <p>mobile No. 9528XXXXXX</p>
+                <P>Email:sia.shakya@gla.ac.in</P>
+            </div>
+            <div class="news">
+                <h1>NEWSLETTER</h1>
+                <form>
+                    Name:
+                    <input type="text">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+        <div class="footer02">
+            <a href=""><img src="images/linkedin.svg" alt=""></a>
+            <a href=""><img src="images/insta.svg" alt=""></a>
+            <a href=""><img src="images/tele.svg" alt=""></a>
+            <a href=""><img src="images/whats.svg" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>
